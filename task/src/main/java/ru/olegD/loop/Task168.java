@@ -4,14 +4,14 @@ public class Task168 {
     public static void loop(int num1, int num2, int num3) {
         int[] arr1 = Integer.toString(num1).chars()
                 .map(c -> c - '0').toArray();
-        int size1 = arr1.length;
         int[] arr2 = Integer.toString(num2).chars()
                 .map(c -> c - '0').toArray();
-        int size2 = arr2.length;
         int[] arr3 = Integer.toString(num3).chars()
                 .map(c -> c - '0').toArray();
-        int size3 = arr3.length;
 
+        int size1 = arr1.length;
+        int size2 = arr2.length;
+        int size3 = arr3.length;
 
         System.out.println("Цифр: " + size1
                 + ", сумма цифр: " + sum(arr1)
