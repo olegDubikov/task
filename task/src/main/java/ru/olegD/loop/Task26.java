@@ -5,14 +5,16 @@ import java.util.StringJoiner;
 public class Task26 {
     public static void loop(int num) {
         StringJoiner joiner = new StringJoiner(" ");
-        for (int i = 0; num-- >= 0; i = i - 8) {
-            joiner.add(Integer.toString(i));
+        int nums = 0;
+        for (int i = 0; i < num * 2; i ++) {
+            joiner.add(Integer.toString(nums));
+            nums -= 8;
         }
         System.out.println(joiner);
     }
 
     public static void main(String[] args) {
-        loop(3);
+        loop(1);
     }
 }
 /*
